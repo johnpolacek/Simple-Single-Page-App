@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<!--Why not use Modernizr?
+	Modernizr replaces html5 page elements
+	for older browsers on page load.
+	In a single page app, where content 
+	is refreshed without a page load,
+	Modernizr does not replace these elements.-->
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title></title>
+	
+	<meta name="title" content="">
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Your Name Here">
+	<meta name="Copyright" content="Copyright Your Name Here 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Project Name">
+	<meta name="DC.subject" content="What you're about.">
+	<meta name="DC.creator" content="Who made this site.">
+		
+	<!-- Facebook sharing. http://developers.facebook.com/docs/opengraph/ -->
+    <meta property="og:site_name" content="Project Name" />
+	<meta property="og:title" content="Project Name" />
+    <meta property="og:description" content="What you're about." />
+    <meta property="og:image" content="" /> <!-- Thumbnail for sharing. Use absolute URL. Minimum 50x50 -->
+	<meta property="og:type" content="" /><!-- http://developers.facebook.com/docs/opengraph/#types -->
+	
+	<!-- Mobile friendly meta data from Mobile HTML5 Boilerplate -->
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="shortcut icon" href="_/img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="_/img/app-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<link rel="stylesheet" href="_/css/reset.css">
+	<link rel="stylesheet" href="_/css/main.css">
+		
+	<!-- Google is a great source for web fonts -->	
+	<link  href="http://fonts.googleapis.com/css?family=Nunito:300,400,700&v1" rel="stylesheet" type="text/css" >
+	
+	<!-- Viewport setting for proper display on devices -->	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	
+	<!-- sizeit.js for screen size detection. http://johnpolacek.com/sizeit -->	
+	<script src="_/js/sizeit.min.js"></script>
+	<script>
+		sizeit.configure(
+			{
+				max: 600,
+				css: "_/css/small.css",
+				name: "small"
+			},
+			{
+				css: "_/css/large.css",
+				name: "large"
+			}
+		);
+	</script>
+</head>
+
+<body>
+
+    <div id="wrapper" data-role="page">
+        
+        <div id="header" data-role="header">
+            <h1><span class="star">&#9733;</span>	Single Page App Homebrew <span class="star">&#9733;</span></h1>
+        </div>
+        
+        <div id="content" data-role="content">
+			
+		</div>
+        
+        <div id="footer" data-role="footer">
+			<div id="footer-links">
+				<a href="#" id="button-about">About</a>
+				<a href="http://johnpolacek.com/contact" id="button-contact" target="_blank">Contact</a>
+				<a href="#" id="button-signout">Sign Out</a>
+			</div>
+            <p>Single Page App Homebrew by <a href="https://twitter.com/#!/johnpolacek">John Polacek</a> has a <a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">WTFPL license</a></p>
+        </div>
+        
+    </div>
+	
+<!-- Template files below. One thing to consider would be to use a php include
+	to import the template files from external files that can be shared and
+	split up across	multiple apps -->
+    
+    <script id="welcomeTemplate" type="text/x-jQuery-tmpl">
+		<div id="welcome" class="page">
+			<h1>Welcome</h1>
+			<p>This is a homebrew for a single page app<br />
+			<small>(somewhere between a boilerplate and a demo)</small></p>
+			<form id="form-welcome">
+				<input type="text" id="signin-email" class="text-input" value="Email Address" name="email">
+				<p class="error-text">*Come on, that&rsquo;s not a real email. Try again.</p>
+				<a href="#" class="button submit-button">Sign In</a>
+			</form>
+		</div>
+    </script>
+	
+	<script id="homeTemplate" type="text/x-jQuery-tmpl">
+		<div id="home" class="page">
+			<h1>Hi ${userName}</h1>
+			<p>This is my recipe for a basic single page app.</p>
+			<p>Start with Tim Murtaugh&rsquo;s <a href="https://github.com/murtaugh/HTML5-Reset" target="_blank">HTML5 Reset</a>.</p>
+			<p>Sprinkle in some <a href="https://github.com/shichuan/mobile-html5-boilerplate" target="_blank">Mobile HTML5 Boilerplate</a>.</p>
+			<p>Then, build content with <a href="http://api.jquery.com/category/plugins/templates/" target="_blank">jQuery Templates</a><br />
+				(you can substitute <a href="http://mustache.github.com" target="_blank">Mustache</a> if you like).</p>
+			<p>Use <a href="https://github.com/johnpolacek/sizeit.js#readme" target="_blank">sizeit.js</a> to deliver custom css flavor for <br />
+				some deliciously <a href="http://www.abookapart.com/products/responsive-web-design" target="_blank">responsive web design</a>.</p>
+		</div>
+    </script>
+	
+	<script id="registerTemplate" type="text/x-jQuery-tmpl">
+		<div id="register" class="page">
+			<h1>Register New Account</h1>
+			<form id="form-register">
+				<input type="text" id="register-email" class="text-input" maxlength="99" name="email" value="${email}" />
+				<p class="error-text" id="error-email">*Come on, that&rsquo;s not a real email. Try again.</p>
+				
+				<input type="text" id="register-name" class="text-input" maxlength="20" name="name-input" value="User Name" />
+				<p class="error-text" id="error-name">*Please choose another user name.</p>
+				
+				<p>
+					<span class="error-text" id="error-confirm">*</span> 
+					<input type="checkbox" id="register-confirm" name="register-confirm" />
+					<label for="register-confirm">I&rsquo;ve double-checked that my email is correct.</label>
+				</p>
+					
+				<a href="#" class="button submit-button">Submit</a>
+				
+			</form>
+		</div>
+    </script>
+
+<!-- JAVASCRIPT -->
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+
+<script src="_/js/app.js"></script>
+
+<!-- Asynchronous google analytics; this is the official snippet.
+	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
+	 
+<script>
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+-->
+  
+</body>
+</html>

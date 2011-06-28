@@ -1,0 +1,144 @@
+/* main styles */
+
+a.button {
+	border-top: 1px solid #999;
+	background: #aaa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#aaa));
+	background: -moz-linear-gradient(top, #ddd, #aaa);
+	padding: 6px 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #444;
+	font-size: 12px;
+	font-family: Helvetica, Arial, Sans-Serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+a.button:hover {
+	border-top-color: #999;
+	background: #ccc;
+	color: #333;
+}
+
+a.button:active {
+	border-top-color: #888;
+	background: #bbb;
+}
+
+label {
+	font-size: 12px;
+}
+
+a.submit-button {
+	position: relative;
+	top: 5px;
+}
+
+p {
+	padding: 10px;
+}
+
+p.error-text {
+	padding: 0;
+}
+
+/* -------------------------------------------
+		HEADER
+----------------------------------------------  */
+
+#header {
+	padding: 10px;
+	text-align: center;
+}
+
+#header h1, #header h2 {
+	font-family: 'Nunito', serif;
+	font-style: normal;
+  	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+.star {
+	font-size: 75%;
+	position: relative;
+	bottom: 4px;
+	padding: 0 5px;
+}
+
+/* -------------------------------------------
+		CONTENT
+----------------------------------------------  */
+
+.page {
+    text-align: center;
+}
+
+#content {
+	padding: 20px 10px;
+}
+
+#content h1 {
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+.error-text {
+	color: red;
+	font-style: italic;
+	font-size: 12px;
+	visibility: hidden;
+}
+
+.text-input {
+	width: 270px;
+}
+
+#content form {
+	padding: 10px 0;
+}
+
+#welcome {
+	text-align: center;
+}
+
+#home {
+	text-align: center;
+}
+
+#register-form {
+	width: 300px;
+	margin: 0 auto;
+}
+
+/* -------------------------------------------
+		FOOTER
+----------------------------------------------  */
+
+#footer {
+	padding-bottom: 15px;
+    background: #eee;
+    width: 100%;
+    text-align: center;
+    border-top: solid 1px #ddd;
+}
+
+#footer p {
+    padding: 5px;
+	font-size: 10px;
+    color: #666;
+}
+
+#footer-links {
+	padding: 10px;
+}
+
+#footer-links a {
+	text-transform: uppercase;
+	color: #666;
+	font-size: 12px;
+	padding: 10px;
+}
