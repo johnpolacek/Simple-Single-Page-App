@@ -12,8 +12,8 @@ some deliciously [responsive web design](http://www.abookapart.com/products/resp
   
   
 ---------
-SPA-Homebrew created by John Polacek
-Twitter: http://twitter.com/#!/johnpolacek
-Blog: http://johnpolacek.com
-SPA-Homebrew has a [WTFPL license](http://sam.zoy.org/wtfpl/COPYING).
+SPA-Homebrew created by John Polacek  
+Twitter: http://twitter.com/#!/johnpolacek  
+Blog: http://johnpolacek.com  
+SPA-Homebrew has a [WTFPL license](http://sam.zoy.org/wtfpl/COPYING)  
 
