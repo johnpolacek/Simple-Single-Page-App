@@ -1,13 +1,5 @@
 <!doctype html>
 <html lang="en">
-
-<!--Why not use Modernizr?
-	Modernizr replaces html5 page elements
-	for older browsers on page load.
-	In a single page app, where content 
-	is refreshed without a page load,
-	Modernizr does not replace these elements.-->
-
 <head>
 
 	<meta charset="utf-8">
@@ -15,11 +7,10 @@
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title></title>
+	<title>Your App Title</title>
 	
-	<meta name="title" content="">
-	<meta name="description" content="">
-	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	<meta name="title" content="Your App Title">
+	<meta name="description" content="Your app description goes here.">
 	
 	<meta name="google-site-verification" content="">
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
@@ -103,20 +94,16 @@
         </div>
         
     </div>
-	
-<!-- Template files below. One thing to consider would be to use a php include
-	to import the template files from external files that can be shared and
-	split up across	multiple apps -->
     
     <script id="welcomeTemplate" type="text/x-jQuery-tmpl">
 		<div id="welcome" class="page">
 			<h1>Welcome</h1>
-			<p>This is a homebrew for a single page app<br />
+			<p>This is a recipe for a single page app<br />
 			<small>(somewhere between a boilerplate and a demo)</small></p>
 			<form id="form-welcome">
 				<input type="text" id="signin-email" class="text-input" value="Email Address" name="email">
 				<p class="error-text">*Come on, that&rsquo;s not a real email. Try again.</p>
-				<a href="#" class="button submit-button">Sign In</a>
+				<a href="#" class="button submit-button" id="signin-submit">Sign In</a>
 			</form>
 		</div>
     </script>
@@ -127,6 +114,7 @@
 			<p>This is my recipe for a basic single page app.</p>
 			<p>Start with Tim Murtaugh&rsquo;s <a href="https://github.com/murtaugh/HTML5-Reset" target="_blank">HTML5 Reset</a>.</p>
 			<p>Sprinkle in some <a href="https://github.com/shichuan/mobile-html5-boilerplate" target="_blank">Mobile HTML5 Boilerplate</a>.</p>
+			<p>Add <a href="http://www.asual.com/jquery/address/" target="_blank">jQuery address</a> for deep-linking.</p>
 			<p>Then, build content with <a href="http://api.jquery.com/category/plugins/templates/" target="_blank">jQuery Templates</a><br />
 				(you can substitute <a href="http://mustache.github.com" target="_blank">Mustache</a> if you like).</p>
 			<p>Use <a href="https://github.com/johnpolacek/sizeit.js#readme" target="_blank">sizeit.js</a> to deliver custom css flavor for <br />
@@ -150,7 +138,7 @@
 					<label for="register-confirm">I&rsquo;ve double-checked that my email is correct.</label>
 				</p>
 					
-				<a href="#" class="button submit-button">Submit</a>
+				<a href="#" class="button submit-button" id="register-submit">Submit</a>
 				
 			</form>
 		</div>
@@ -158,8 +146,8 @@
 
 <!-- JAVASCRIPT -->
 <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="_/js/jquery.address-1.4.min.js"></script>
 <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
-
 <script src="_/js/app.js"></script>
 
 <!-- Asynchronous google analytics; this is the official snippet.

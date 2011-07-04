@@ -4,6 +4,8 @@ Start with Tim Murtaugh&rsquo;s [HTML5 Reset](https://github.com/murtaugh/HTML5-
 
 Sprinkle in some [Mobile HTML5 Boilerplate](https://github.com/shichuan/mobile-html5-boilerplate).
 
+Add [jQuery address](http://www.asual.com/jquery/address/) for deep-linking.
+
 Then, build content with [jQuery Templates](http://api.jquery.com/category/plugins/templates/)
 (you can substitute [Mustache](http://mustache.github.com) if you like).
 
