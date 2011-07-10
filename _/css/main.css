@@ -5,9 +5,11 @@ a.button {
 	background: #aaa;
 	background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#aaa));
 	background: -moz-linear-gradient(top, #ddd, #aaa);
+	background: -o-linear-gradient(top, #ddd, #aaa);
 	padding: 6px 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
 	border-radius: 15px;
 	color: #444;
 	font-size: 12px;
