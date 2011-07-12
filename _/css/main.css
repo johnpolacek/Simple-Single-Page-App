@@ -1,4 +1,6 @@
-/* main styles */
+/* -------------------------------------------
+		GLOBAL
+----------------------------------------------  */
 
 a.button {
 	border-top: 1px solid #999;
@@ -29,10 +31,6 @@ a.button:active {
 	background: #bbb;
 }
 
-label {
-	font-size: 12px;
-}
-
 a.submit-button {
 	position: relative;
 	top: 5px;
@@ -43,7 +41,22 @@ p {
 }
 
 p.error-text {
-	padding: 0;
+	color: red;
+	font-style: italic;
+	font-size: 12px;
+	visibility: hidden;
+}
+
+form {
+	padding: 10px 0;
+}
+
+input[type=text] {
+	width: 270px;
+}
+
+label {
+	font-size: 12px;
 }
 
 /* -------------------------------------------
@@ -75,32 +88,14 @@ p.error-text {
 		CONTENT
 ----------------------------------------------  */
 
-.page {
-    text-align: center;
-}
-
 #content {
 	padding: 20px 10px;
+	text-align: center;
 }
 
 #content h1 {
 	font-size: 18px;
 	padding-bottom: 5px;
-}
-
-.error-text {
-	color: red;
-	font-style: italic;
-	font-size: 12px;
-	visibility: hidden;
-}
-
-.text-input {
-	width: 270px;
-}
-
-#content form {
-	padding: 10px 0;
 }
 
 #welcome {
