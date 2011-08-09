@@ -1,19 +1,11 @@
 /* styles for devices with small screens */
 
-body {
-    background: #eee;
-}
-
 /* -------------------------------------------
 		HEADER
 ----------------------------------------------  */
 
 #header {
-    background: #fff;
-}
-
-#header h1 {
-	font-size: 18px;
+	
 }
 
 /* -------------------------------------------
@@ -21,11 +13,7 @@ body {
 ----------------------------------------------  */
 
 #content {
-    background: #fff;
-}
-
-#welcome, #register {
-	height: 210px;
+   
 }
 
 /* -------------------------------------------

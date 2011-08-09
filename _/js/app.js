@@ -62,14 +62,7 @@ var App = (function() {
         }
         
         // add the content
-        $(pageID+'Template').tmpl(pageData).appendTo('#content');
-        
-        // If using jQuery mobile, use page() to refresh styles to the new content,
-        // wrap it in a conditional if mixing mobile and desktop
-        //
-        // if (isMobile) {
-        //    $(pageID).page(); 
-        // }
+        $(pageID+'Template').tmpl(pageData).appendTo('#content').trigger('create');
         
         // Scroll to top
         window.scrollTo(0,0);    

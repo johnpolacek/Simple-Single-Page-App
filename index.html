@@ -37,6 +37,8 @@
 	
 	<link rel="stylesheet" href="_/css/reset.css">
 	<link rel="stylesheet" href="_/css/main.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+	<link rel="stylesheet" href="_/css/theme.css">
 		
 	<!-- Google is a great source for web fonts -->	
 	<link  href="http://fonts.googleapis.com/css?family=Nunito:700&v1" rel="stylesheet" type="text/css" >
@@ -63,17 +65,17 @@
 
 <body>
 
-    <div id="wrapper">
+    <div id="wrapper" data-role="page">
         
-        <div id="header">
+        <div id="header" data-role="header">
             <h1><span class="star">&#9733;</span>	Single Page App Homebrew <span class="star">&#9733;</span></h1>
         </div>
         
-        <div id="content">
+        <div id="content" data-role="content">
 			
 		</div>
         
-        <div id="footer">
+        <div id="footer" data-role="footer">
 			<div id="footer-links">
 				<a href="http://johnpolacek.com/spa" id="button-about">About</a>
 				<a href="http://johnpolacek.com/contact" id="button-contact" target="_blank">Contact</a>
@@ -135,9 +137,16 @@
 
 <!-- JAVASCRIPT -->
 <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script type="text/javascript">
+	$(document).bind("mobileinit", function(){
+		$.mobile.ajaxLinksEnabled = false;
+		$.mobile.hashListeningEnabled = false;
+	});
+</script>
 <script src="_/js/jquery.address-1.4.min.js"></script>
 <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
 <script src="_/js/app.js"></script>
+<script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
