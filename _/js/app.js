@@ -277,12 +277,12 @@ var App = (function() {
                 userName = getCookie("userName");
                 if (userName) {
                     // if user is signed in go home
-                    $.address.value("home");
+                    changePage("home","Welcome Back")
                 } else {
                     // otherwise, go to signin screen (welcome)
                     enableSignout(false);
-                    $.address.value("welcome");
-                }   
+                    changePage("welcome","Welcome")
+                }  
             })
                 .change(function(event) {
                     updateContent(event.value.substring(1));
