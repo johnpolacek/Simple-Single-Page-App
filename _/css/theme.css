@@ -1,5 +1,9 @@
 /* Override or set up custom jQuery Mobile themes */
 
 .ui-body-c {
-	height: 60%;
+	
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+	margin: .6em 0;
 }
